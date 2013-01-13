@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+  font-family:Helvetica Neue, Helvetica, sans-serif;
+}
+
+  #map_canvas {
+  	width:600px;
+    height: 650px;
+    float:left;
+    margin-left:30px;
+  }
+  .menu {
+  	width:200px;
+  	float:left;
+  }
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map_canvas {
+  	width:500px;
+    height: 650px;
+  }
+}
