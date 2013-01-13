@@ -20,7 +20,7 @@
 
         var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-        var ctaLayer = new google.maps.KmlLayer('http://rioleo.org/dev/gps/data/<?=$_GET["f"];?>');
+        var ctaLayer = new google.maps.KmlLayer('http://mywebsite.com/gps/data/<?=$_GET["f"];?>');
         ctaLayer.setMap(map);
       }
     </script>
@@ -39,7 +39,7 @@ $images = glob($directory . "*.kml");
 //print each file name
 foreach($images as $image)
 {
-echo "<li><a href='http://rioleo.org/dev/gps/map.php?f=".str_replace($directory, "", $image)."'>".str_replace($directory, "", $image)."</a></li>";
+echo "<li><a href='http://mywebsite.com/gps/map.php?f=".str_replace($directory, "", $image)."'>".str_replace($directory, "", $image)."</a></li>";
 }
 ?>
   </div>
